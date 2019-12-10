@@ -1,0 +1,258 @@
+:root {
+    /* Font-Size */
+    --small-text: 16px;
+    --medium-text: 24px;
+    --small-title: 24px;
+    --medium-title: 32px;
+    --big-title: 48px;
+
+    /* Margins */
+    --small-margin:16px;
+    --medium-margin: 24px;
+    --large-margin: 32px;
+    --xxl-margin: 48px;
+    --xl-margin: 40px;
+
+
+    /* Colors */
+    --btn-active: #1C5CCC;
+    --btn-shadow: #4DABCC;
+    --btn-backgrnd: #3C90CE;
+  }
+
+
+/* BASICS */
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: White;
+    font-family: Helvetica;
+}
+
+p{
+    color: rgba(211, 208, 201, 0.7);
+    font-size: var(--small-text);
+}
+
+h1{
+    color: var(--btn-backgrnd);
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: var(--small-title);
+    line-height: 28px;
+    color: #e8e6e3;
+}
+
+
+/* COMPONENTS */
+
+.mockup{
+    width: 360px;
+    height: 360px;
+}
+
+.favicon{
+    width: 60px;
+    height: 60px;
+    margin-right: var(--medium-margin);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--xxl-margin);
+}
+
+.container{
+    margin-left: var(--small-margin);
+    margin-right: var(--small-margin);
+    text-align: center;
+    margin-bottom: var(--medium-margin);
+}
+
+.registry{
+    margin-left: var(--small-margin);
+    margin-right: var(--small-margin);
+    text-align: center;
+    margin-bottom: var(--medium-margin);
+}
+
+.input{
+  width: 310px;
+  padding: 5px;
+  display: inline-block;
+  border: none;
+  background: #363636;
+  margin-bottom: 8px;
+  color: #e8e6e3;
+}
+
+.signbtn {
+    background-color: #3C90CE;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 320px;
+    opacity: 0.8;
+  }
+
+  .signbtn:hover {
+    opacity: 1;
+  }
+
+
+/* MEDIA QUERIES */
+
+  @media (min-width: 768px){
+    p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    h1{
+        margin-bottom: 0px;
+        font-size: var(--big-title);
+    }
+    
+    h2{
+        font-size: var(--medium-title);
+        line-height: 48px;
+    }
+    
+    .mockup{
+        width: 450px;
+        height: 450px;
+    }
+
+    .mockup_container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .favicon{
+        width: 100px;
+        height: 100px;
+        margin-right: var(--medium-margin);
+    }
+    
+    .content{
+        margin-top: var(--xxl-margin);
+    }
+    
+    .container{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: var(--large-margin);
+    }
+    
+    .registry{
+        margin-left: var(--medium-margin);
+        margin-right: var(--medium-margin);
+        margin-bottom: var(--medium-margin);
+    }
+    
+    .input{
+      width: 500px;
+      padding: 10px;
+    }
+    
+    .signbtn {
+        width: 520px;
+        padding: 10px;
+      }
+    
+      .signbtn:hover {
+        opacity: 1;
+      }
+  }
+
+
+  @media (min-width: 1024px){
+    p{
+        font-size: var(--small-text);
+        line-height: 28px;
+    }
+
+    h1{
+        font-size: var(--big-title);
+    }
+    
+    h2{
+        font-size: var(--medium-title);
+        line-height: 40px;
+    }
+    
+    .mockup{
+        width: 400px;
+        height: 400px;
+    }
+
+    .mockup_container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .favicon{
+        width: 100px;
+        height: 100px;
+        margin-right: var(--medium-margin);
+    }
+    
+    
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: var(--large-margin);
+    }
+    
+    .registry{
+        margin-left: var(--xxl-margin);
+        margin-right: var(--xxl-margin);
+        margin-bottom: var(--xl-margin);
+    }
+    
+    .input{
+      width: 400px;
+      padding: 10px;
+    }
+    
+    .signbtn {
+        width: 420px;
+        padding: 10px;
+      }
+    
+    .signbtn:hover {
+        opacity: 1;
+      }
+
+    .container1{
+        display: flex;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+  }
+
+
+  @media (min-width: 1024px){ 
+    .mockup{
+        width: 500px;
+        height: 500px;
+    }
+
+    .mockup_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+
+  }

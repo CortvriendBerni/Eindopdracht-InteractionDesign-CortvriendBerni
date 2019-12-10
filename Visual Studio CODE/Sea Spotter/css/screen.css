@@ -1,0 +1,232 @@
+:root {
+    /* Font-Size */
+    --small-text: 16px;
+    --medium-text: 24px;
+    --small-title: 24px;
+    --medium-title: 32px;
+    --big-title: 48px;
+
+    /* Margins */
+    --medium-margin: 24px;
+    --large-margin: 32px;
+    --xxl-margin: 48px;
+    --xl-margin: 40px;
+
+
+    /* Colors */
+    --btn-active: #1C5CCC;
+    --btn-shadow: #4DABCC;
+    --btn-backgrnd: #3C90CE;
+  }
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: var(--small-title);
+    margin: 0;
+    margin-top: var(--xxl-margin);
+    margin-bottom: var(--medium-margin);
+}
+
+h2{
+    font-size: var(--small-text);
+    margin: 0;
+    margin-bottom: var(--medium-margin);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: White;
+    font-family: Helvetica;
+}
+
+#mymap{
+    height: 580px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.favicon{
+    width: 60px;
+    height: 60px;
+    margin-right: var(--medium-margin);
+    margin-top: var(--medium-margin);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.titel_beschrijving{
+    font-weight: bold;
+}
+
+.animal_list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--large-margin);
+}
+
+.btn{
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--btn-backgrnd);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--btn-shadow);
+}
+
+.btn:hover{
+    background-color: var(--btn-active);
+}
+
+.btn:focus{
+    background-color: var(--btn-active);
+    box-shadow: 0 5px var(--btn-shadow);
+    transform: translateY(4px);
+}
+
+@media(min-width: 768px){
+    h1{
+        font-size: var(--medium-title);
+        margin: 0;
+        margin-top: var(--large-margin);
+        margin-bottom: var(--large-margin);
+    }
+
+    h2{
+        font-size: var(--medium-text);
+        margin: 0;
+        margin-bottom: var(--large-margin);
+    }
+
+    #mymap{
+        height: 740px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .favicon{
+        width: 70px;
+        height: 70px;
+        margin-right: var(--medium-margin);
+        margin-top: 10px;
+    }
+
+    .animal_list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--xl-margin);
+    }
+
+    .btn{
+        font-size: var(--medium-text);
+        padding: 15px 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        box-shadow: 0 9px var(--btn-shadow);
+    }
+
+    .btn:focus{
+        box-shadow: 0 5px var(--btn-shadow);
+        transform: translateY(4px);
+    }
+}
+
+@media(min-width: 1024px){
+    h1{
+        font-size: var(--medium-title);
+        margin: 0;
+        margin-top: var(--large-margin);
+        margin-bottom: var(--large-margin);
+    }
+
+    h2{
+        font-size: var(--medium-text);
+        margin: 0;
+        margin-bottom: var(--large-margin);
+    }
+
+    #mymap{
+        height: 480px;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .animal_list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--xl-margin);
+    }
+
+    .btn{
+        font-size: var(--medium-text);
+        padding: 15px 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        box-shadow: 0 9px var(--btn-shadow);
+    }
+
+    .btn:focus{
+        box-shadow: 0 5px var(--btn-shadow);
+        transform: translateY(4px);
+    }
+}
+
+@media(min-width: 1224px){
+    h1{
+        font-size: var(--medium-title);
+        margin: 0;
+        margin-top: var(--large-margin);
+        margin-bottom: var(--large-margin);
+    }
+
+    h2{
+        font-size: var(--medium-text);
+        margin: 0;
+        margin-bottom: var(--medium-margin);
+    }
+
+    #mymap{
+        height: 450px;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .animal_list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--xl-margin);
+    }
+
+    .btn{
+        font-size: var(--medium-text);
+        padding: 15px 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        box-shadow: 0 9px var(--btn-shadow);
+    }
+
+    .btn:focus{
+        box-shadow: 0 5px var(--btn-shadow);
+        transform: translateY(4px);
+    }
+}
+
